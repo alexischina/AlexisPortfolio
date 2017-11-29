@@ -401,14 +401,13 @@ nav {
     }
     #me-text {
         margin-left: 310px;
-        margin-top: 960px;
-        padding-top: 600px;
+        margin-top: -60px;
         top: 280px;
     }
 }
 
 /* SCREENS BETWEEN 992px AND 1200px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     /* Styling of links in navbar */
     a {
         font-size: 160%;
@@ -441,7 +440,7 @@ nav {
     }
     #me-text {
         margin-top: -400px;
-        padding-top: 300px;
+        padding-top: 100px;
     }
 }
 
