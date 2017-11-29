@@ -1,4 +1,4 @@
-/* set position for background image */
+/* BACKGROUND */
 .background {
     background-image: url("img/Background.jpg");
     background-size: cover;
@@ -8,87 +8,39 @@
     z-index: 0;
 }
 
-/* Change positioning of background based on screen size */
-@media screen and (max-width: 415px) {
-    .background {
-    position: fixed;
-    }
-}
+/* REMOVE SCROLLBAR */
+body { overflow:hidden }
 
-.icon-bar {
+/* NAVIGATION BAR */
+/* Container */
+.container-fluid {
+    position: fixed;
+    width: 100%;
+}
+/* Right Align */
+.navbar-right {
     text-align: right;
 }
 
-/* Remove Scrollbar */
-body {
-    overflow:hidden;
+/* Hamburger Menu */
+.navbar .navbar-toggle .icon-bar {
+    background-color: gray;
 }
 
-/* Styling of links in navbar */
+/* Static Links */
 a {
     text-decoration: none;
     color: gray;
     font-family: "Gill Sans";
 }
-
-.container-fluid {
-    position: fixed;
-    width: 100%;
-    top: 10px;
-}
-
-/* Styling for hamburger menu icon */
-.navbar .navbar-toggle .icon-bar {
-    background-color: black;
-}
-
-.navbar-right {
-    text-align: right;
-}
-/* Styling for hovered over selection */
+/* Hovered Over Links */
+/* Text */
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-color: black;
-background-color: transparent;
-font-weight: bolder;
-}
-
-.active {
-font-weight: bolder;
-color: black;
-}
-
-/* Styling for active selection */
-.navbar .navbar-nav> li > a:active, .navbar .navbar-nav > li > a:focus {
-color: black;
-background-color:transparent;
-font-weight: bolder;
-}
-
-/* Name in top left */
-.name {
-    font-family: "Gill Sans";
-    font-size: 175%;
     color: black;
-    padding-left: 10px;
-    padding-top: 10px;
+    background-color: transparent;
+    font-weight: bolder;
 }
-
-.name a {
-  text-decoration: none;
-}
-
-/* Styling for logo */
-.logo {
-    width: 20%;
-    height: auto;
-    position: fixed;
-    vertical-align: middle;
-    margin-left: 45%;
-    margin-right: 55%;
-    padding-top: 20%;
-    z-index: 50;
-}
-
+/* Circle Animations*/
 /* Animations for circles when hovering over navbar elements */
 .container-fluid a:before, div.circleBehind a:after {
     position: absolute;
@@ -102,7 +54,7 @@ font-weight: bolder;
     background: transparent;
     content: "";
     opacity: 0;
-    /* takes 0.7 seconds for each circle to fully fade in */
+    /* takes 0.7 seconds for each circle to fade in */
     transition: all .7s;
     z-index: -1;
 }
@@ -133,43 +85,157 @@ font-weight: bolder;
 }
 
 @keyframes slideUp {
-    0% {
-        transform: translateY(100%);
-    }
-    50%{
-        transform: translateY(-8%);
-    }
-    65%{
-        transform: translateY(4%);
-    }
-    80%{
-        transform: translateY(-4%);
-    }
-    95%{
-        transform: translateY(2%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+    0% { transform: translateY(100%); }
+    50%{ transform: translateY(-8%); }
+    65%{ transform: translateY(4%); }
+    80%{ transform: translateY(-4%); }
+    95%{ transform: translateY(2%); }
+    100%{ transform: translateY(0%); }
 }
 
 @-webkit-keyframes slideUp {
-    0% {
-        -webkit-transform: translateY(100%);
+    0% { -webkit-transform: translateY(100%); }
+    50%{ -webkit-transform: translateY(-8%); }
+    65%{ -webkit-transform: translateY(4%); }
+    80%{ -webkit-transform: translateY(-4%); }
+    95%{ -webkit-transform: translateY(2%); }
+    100%{ -webkit-transform: translateY(0%); }
+}
+/* Active Links */
+.navbar .navbar-nav> li > a:active, .navbar .navbar-nav > li > a:focus {
+    color: black;
+    background-color:transparent;
+    font-weight: bolder;
+}
+.active {
+    font-weight: bolder;
+    color: black;
+}
+
+/* Top left ALEXISCHINA */
+.name a {
+    text-decoration: none;
+}
+.name {
+    font-family: "Gill Sans";
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    z-index: 55;
+    position: fixed;
+}
+
+/* LOGO */
+.logo {
+    height: auto;
+    position: fixed;
+    vertical-align: middle;
+    z-index: 50;
+}
+
+/* SCREENS UNDER 576px */
+@media screen and (max-width: 576px) {
+    /* Top left ALEXISCHINA */
+    .name {
+        font-size: 175%;
     }
-    50%{
-        -webkit-transform: translateY(-8%);
+    /* LOGO */
+    .logo {
+        width: 40%;
+        margin-left: 32%;
+        margin-right: 55%;
+        padding-top: 65%;
     }
-    65%{
-        -webkit-transform: translateY(4%);
+    .container-fluid {
+        margin-top: -1%;
     }
-    80%{
-        -webkit-transform: translateY(-4%);
+}
+
+/* SCREENS BETWEEN 576px AND 768px */
+@media screen and (min-width: 576px) {
+    /* Top left ALEXISCHINA */
+    .name {
+        font-size: 175%;
     }
-    95%{
-        -webkit-transform: translateY(2%);
+    /* Styling of links in navbar */
+    a {
+        font-size: 175%;
     }
-    100% {
-        -webkit-transform: translateY(0%);
+    /* LOGO */
+    .logo {
+        width: 40%;
+        margin-left: 32%;
+        margin-right: 55%;
+        padding-top: 65%;
+    }
+    .container-fluid {
+        margin-top: 1.8%;
+    }
+}
+
+/* SCREENS BETWEEN 768px AND 992px */
+@media screen and (min-width: 768px) {
+    /* Styling of links in navbar */
+    a {
+        font-size: 175%;
+    }
+    /* Top Left ALEXISCHINA */
+    .name {
+        font-size: 220%;
+    }
+    /* LOGO */
+    .logo {
+        width: 37%;
+        margin-left: 32%;
+        margin-right: 55%;
+        padding-top: 45%;
+    }
+    .container-fluid {
+        margin-top: 1.8%;
+    }
+}
+
+/* SCREENS BETWEEN 992px AND 1200px */
+@media screen and (min-width: 768px) {
+    /* Styling of links in navbar */
+    a {
+        font-size: 160%;
+    }
+    /* Top Left ALEXISCHINA */
+    .name {
+        font-size: 200%;
+    }
+    /* LOGO */
+    .logo {
+        width: 37%;
+        margin-left: 32%;
+        margin-right: 55%;
+        padding-top: 45%;
+    }
+    .container-fluid {
+        margin-top: 1.8%;
+    }
+}
+
+/* SCREENS GREATER THAN 1200px */
+@media screen and (min-width: 1200px) {
+    /* Styling of links in navbar */
+    a {
+        font-size: 240%;
+    }
+    /* Top left ALEXISCHINA */
+    .name {
+        font-size: 180%;
+        padding-left: 25px;
+    }
+    /* LOGO */
+    .logo {
+        width: 25%;
+        margin-left: 37%;
+        margin-right: 55%;
+        padding-top: 22%;
+    }
+    .container-fluid {
+        margin-top: 2.1%;
     }
 }
