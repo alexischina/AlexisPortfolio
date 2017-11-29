@@ -1,9 +1,10 @@
-//
+// Local Storage function for populating the project detail page
 function chooseProject(id) {
     localStorage.setItem("id2", id);
     window.location.href="project_detail.html";
 }
 
+// Content to be filled for each project
 var projects = {
     "chosenProject": [
         {
@@ -33,27 +34,13 @@ var projects = {
     ]
 }
 
+// Run the function and store the selected project in local storage
 $(document).ready(function () {
 
     n=Number(localStorage.getItem("id2"));
     updateProductDetail(n);
 
-// get the HTML template using jQuery
-    // var source = $("#selection-template").html();
-    // // compile the template into a function
-    // var template = Handlebars.compile(source);
-    // // create new HTML using our data
-    // var newHTML = template(projects);
-    // // add the new HTML to the page
-    // $("#product-selection-container").append(newHTML);
-
-    // // TODO: (Step 8): add code below for changing product details on click
-    // $(".product-selection").click(function() {
-    //     var id = $(this).attr("id");
-    //     updateProductDetail(id);
-    // });
-
-// TODO (Step 6): fill in function for updating detail-template based on id
+// Update the Project Detail page based on the selected ID
 function updateProductDetail(id) {
     // get the HTML template using jQuery
     var source = $("#detail-template").html();

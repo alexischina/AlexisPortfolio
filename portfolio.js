@@ -1,3 +1,4 @@
+// When document is ready, background scrolls
 $(document).ready(function () {
     $('html, body').animate({scrollTop:$(document).height()}, 10000);
     setTimeout(function() { $('html, body').animate({scrollTop:0}, 4000);},4000);
@@ -10,5 +11,4 @@ $(document).ready(function () {
     },7000);
 
     },8000);
-
 });
