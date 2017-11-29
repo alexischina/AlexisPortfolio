@@ -36,12 +36,6 @@ var projects = {
             "img": "img/CUI.jpg",
             "id": 4
         },
-        {
-            "name": "Bun Bun Bake Shop",
-            "description": "This website for a bake shop in Pittsburgh, Pennsylvania was created using HTML, CSS, JavaScript, and jQuery. It allows users to input an order for buns and select various characteristics of those buns. It then allows users to add their selections to their cart, view their cart, see their selections, and see their total cost. This required using local storage in JavaScript and learning how to pass information from page to page within the same website. The design of the site also required user testing and constant iteration between prototypes and hard coding.",
-            "img": "Buns.jpg",
-            "id": 5
-        },
     ]
 }
 
