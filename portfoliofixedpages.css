@@ -8,23 +8,27 @@
     z-index: 0;
 }
 
-/*styling of links in nav bar*/
-a {
-    text-decoration: none;
-    color: gray;
-    font-family: "Gill Sans";
-}
-
+/* NAVIGATION BAR */
+/* Container */
 .container-fluid {
     text-decoration: none;
     position: absolute;
     width: 100%;
     top: 10px;
 }
-
-/* Hamburger menu icon */
+/* Right Align */
+.navbar-right {
+    text-align: right;
+}
+/* Hamburger Menu */
 .navbar .navbar-toggle .icon-bar {
-    background-color: black;
+    background-color: gray;
+}
+/* Static Links */
+a {
+    text-decoration: none;
+    color: gray;
+    font-family: "Gill Sans";
 }
 
 /*styling for uncollapsed nav bar */
@@ -32,11 +36,6 @@ a {
     border-color: transparent;
     background-color: transparent;
     z-index: 50;
-}
-
-/* Dropdown items from hamburger menu */
-.navbar-right {
-    text-align: right;
 }
 
 /* styling for hovered over selection */
@@ -58,7 +57,7 @@ background-color: transparent;
 font-weight: bolder;
 }
 
-/* Styling for ALEXISCHINA in the top left */
+/* Top Left ALEXISCHINA */
 .name {
     font-family: "Gill Sans";
     font-size: 175%;
@@ -70,6 +69,7 @@ font-weight: bolder;
   text-decoration: none;
 }
 
+/* CONTACT PAGE */
 .contact-container {
     padding-top: 15%;
     padding-left: 38%;
@@ -84,6 +84,7 @@ font-weight: bolder;
     padding-top:15px;
 }
 
+/* Image */
 #me {
     zoom: 35%;
     margin-right: 10px;
@@ -92,7 +93,7 @@ font-weight: bolder;
     margin-bottom: -30%;
 }
 
-/* styling for text on about me page */
+/* Description */
 #me-text {
     font-family: "Gill Sans";
     font-weight: lighter;
@@ -205,6 +206,7 @@ nav {
     margin: 0;
 }
 
+/* PROJECT DETAIL PAGE */
 .product-detail {
     margin-top: 100px;
 }
@@ -219,12 +221,6 @@ nav {
     margin: 5px;
 }
 
-.title {
-    margin-top: 20%;
-    text-align: left;
-    font-family: "Gill Sans";
-}
-
 .portfolio-item {
     margin-bottom: 25px;
 }
@@ -233,24 +229,36 @@ nav {
     margin-top:430px;
 }
 
+/* Project Image */
 .image1 {
-    zoom: 30%;
     padding-top: 20%;
+    zoom: 30%;
+}
+
+/* Project Title */
+.title {
+    margin-top: 10%;
+    text-align: left;
+    font-family: "Gill Sans";
 }
 
 h1 {
     margin-top: 10%;
 }
 
+/* Project Description */
 .description {
     font-family: "Gill Sans";
 }
 
+/* Back button */
 #back {
     z-index: 1000;
     position: absolute;
 }
 
+/* WORK PAGE */
+/* Image Gallery */
 #photo-grid {
     padding-top: 40px;
 }
@@ -269,13 +277,24 @@ h1 {
         font-size: 140%;
         margin-left: -75%;
         margin-top: 20%;
-    text-align: center;
+        text-align: center;
     }
     #email {
         zoom: 2%;
         margin-top: 15%;
         margin-bottom: -10%;
-
+    }
+    .image1 {
+        padding-top: 20%;
+        padding-left: 15%;
+    }
+    .description {
+        padding-left: 15%;
+        padding-right: 10%;
+    }
+    .title {
+        padding-left: 15%;
+        padding-right: 10%;
     }
 }
 
@@ -304,6 +323,22 @@ h1 {
         margin-top: 15%;
         margin-bottom: -10%;
     }
+    .image1 {
+        padding-top: 20%;
+        padding-left: 15%;
+    }
+    .description {
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+    .title {
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+    #back {
+        top: 120px;
+        left: 40px;
+    }
 }
 
 /* SCREENS BETWEEN 768px AND 992px */
@@ -331,7 +366,25 @@ h1 {
         margin-top: 15%;
         margin-bottom: -10%;
     }
-
+    .image1 {
+        max-width: 20px;
+        height: auto;
+        padding-top: 50%;
+        padding-left: 30%;
+    }
+    .description {
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+    .title {
+        padding-left: 5%;
+        padding-right: 10%;
+        padding-top: 20%;
+    }
+    #back {
+        top: 150px;
+        left: 40px;
+    }
 }
 
 /* SCREENS BETWEEN 992px AND 1200px */
@@ -352,6 +405,10 @@ h1 {
         margin-left: -40%;
         margin-top: 20%;
         text-align: center;
+    }
+    .description {
+        padding-left: -20%;
+        padding-right: 10%;
     }
 }
 
@@ -380,5 +437,19 @@ h1 {
         zoom: 4.5%;
         margin-top: 12%;
         margin-left: -20%;
+    }
+    .description {
+        padding-left: -20%;
+        padding-right: 10%;
+    }
+    .image1 {
+        zoom: 50%;
+        height: auto;
+        padding-top: 30%;
+        padding-left: 30%;
+    }
+    #back {
+        top: 120px;
+        left: 40px;
     }
 }
