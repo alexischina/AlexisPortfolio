@@ -13,28 +13,22 @@ var projects = {
             "id": 0
         },
         {
-            "name": "Transportation Display",
-            "description": "The PTF transportation display allows users traveling at the Atlantic Hub to easily locate where they are tryin to go. All locations are listed so that users can easily scan for their destination and see the potential ways of getting there. Additional times are shown as well. A manual control near the display allows users to scroll the display to a different time so that they can see future departures. This improves the overall experience of travelers.",
-            "img": "img/PTFstill.jpg",
-            "id": 1
-        },
-        {
             "name": "iTrain",
             "description": "iTrain is an interactive training device for ball and stick containing sports that allows athletes to train individually. The hardware allows athletes to bounce a ball off the product’s surface to improve their muscle memory and hand eye coordination. The interface on the device allows for workouts to be customized based on the athlete’s ability level and the skills they want to train. A corresponding smartphone application allows athletes to connect with teammates and coaches as well as track their progress. This product can revolutionize the sports training field as it allows for team concepts and skills to be learned and practiced on an individual level.",
             "img": "img/iTrainUser.jpg",
-            "id": 2
+            "id": 1
         },
         {
             "name": "Control Redesign",
             "description": "This original microwave panel design involved several significant usability problems. The redesign strived to improve features such as feedforward, feedback, and signifiers to improve the user experience and allow the device to be used efficiently and effectively.",
             "img": "img/controls.jpg",
-            "id": 3
+            "id": 2
         },
         {
             "name": "CUI",
             "description": "This conversational user interface is designed to improve the experience of families on vacation. Currently, it is difficult to have a family vacation without conflict, as it is nearly impossible to satisfy everyone’s needs at the same time. With Lucy, each family member is given a conversational bracelet, which they can use to make the most out of their trip. Each member can use Lucy to make plans and coordinate with family members, all while enjoying their own time on vacation.",
             "img": "img/CUI.jpg",
-            "id": 4
+            "id": 3
         },
     ]
 }
